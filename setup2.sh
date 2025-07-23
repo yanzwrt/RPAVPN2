@@ -263,7 +263,7 @@ echo "0 2 * * * root cleaner" >> /etc/crontab
 echo "0 3 * * * root /usr/bin/xp" >> /etc/crontab
 echo "0 4 * * * root /usr/bin/delete" >> /etc/crontab
 echo "0 7 * * * root /usr/bin/cleaner" >> /etc/crontab
-echo "0 5 * * * root reboot" >> /etc/crontab
+echo "0 3 * * * root reboot" >> /etc/crontab
 echo "0 6 * * * root backup" >> /etc/crontab
 echo "0 23 * * * root backup" >> /etc/crontab
 echo "5 23 * * * root /usr/bin/backup" >> /etc/crontab
@@ -371,7 +371,7 @@ echo "   - Trojan GO               : 443" | tee -a log-install.txt
 echo "   - Sodosok WS/GRPC         : 443" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
-echo "   - Timezone                : Asia/Kuala_Lumpur (GMT +8)"  | tee -a log-install.txt
+echo "   - Timezone                : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
 echo "   - Fail2Ban                : [ON]"  | tee -a log-install.txt
 echo "   - Dflate                  : [ON]"  | tee -a log-install.txt
 echo "   - IPtables                : [ON]"  | tee -a log-install.txt
