@@ -62,7 +62,7 @@ export Server1_URL="raw.githubusercontent.com/yanzwrt/RPAVPN2/main/limit"
 export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
-export Auther=".geovpn"
+export Auther="RakhaVPN"
 
 # // Root Checking
 if [ "${EUID}" -ne 0 ]; then
@@ -233,7 +233,7 @@ echo -e "   ${BICyan}SSH${NC}: $ssh_status   ${BICyan}NGINX${NC}: $nginx_status 
 echo -e "   ${BICyan}SSH-WS${NC}: $sshws_status   ${BICyan}Stunnel${NC}: $stunnel_status"
 
 echo -e "${BIPurple}━━━━━━━━━━━━━━━━━ ${BIWhite}MENU PILIHAN${BIPurple} ━━━━━━━━━━━━━━━━━${NC}"
-echo -e "  ${BICyan}[${BIWhite}01${BICyan}] SSHWS            ${BICyan}[${BIWhite}06${BICyan}] EXP FILES        ${BICyan}[${BIWhite}11${BICyan}] ADD HOST/DOMAIN"
+echo -e "  ${BICyan}[${BIWhite}01${BICyan}] SSHWS            ${BICyan}[${BIWhite}06${BICyan}] EXP FILES         ${BICyan}[${BIWhite}11${BICyan}] ADD HOST/DOMAIN"
 echo -e "  ${BICyan}[${BIWhite}02${BICyan}] VMESS            ${BICyan}[${BIWhite}07${BICyan}] AUTO REBOOT       ${BICyan}[${BIWhite}12${BICyan}] RENEW CERT"
 echo -e "  ${BICyan}[${BIWhite}03${BICyan}] VLESS            ${BICyan}[${BIWhite}08${BICyan}] REBOOT            ${BICyan}[${BIWhite}13${BICyan}] EDIT BANNER"
 echo -e "  ${BICyan}[${BIWhite}04${BICyan}] TROJAN           ${BICyan}[${BIWhite}09${BICyan}] RESTART           ${BICyan}[${BIWhite}14${BICyan}] RUNNING STATUS"
