@@ -50,7 +50,7 @@ export Server1_URL="raw.githubusercontent.com/yanzwrt/RPAVPN2/main/limit"
 export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
-export Auther=".geovpn"
+export Auther="RakhaVPN"
 
 # // Exporting Script Version
 export VERSION="1.1"
@@ -58,8 +58,8 @@ export VERSION="1.1"
 # // Exporint IP AddressInformation
 export IP=$( curl -s https://ipinfo.io/ip/ )
 
-# // Set Time To Kuala_Lumpur / GMT +8
-ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
+# // Set Time To Jakarta / GMT +7
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # // cek old script
 if [[ -r /etc/xray/domain ]]; then
@@ -209,8 +209,8 @@ wget -q -O /usr/bin/update "https://raw.githubusercontent.com/yanzwrt/RPAVPN2/ma
 wget -q -O /usr/bin/dns "https://raw.githubusercontent.com/yanzwrt/RPAVPN2/main/dns.sh"
 wget -q -O /usr/bin/netf "https://raw.githubusercontent.com/yanzwrt/RPAVPN2/main/netf.sh"
 wget -q -O /usr/bin/bbr "https://raw.githubusercontent.com/yanzwrt/RPAVPN2/main/bbr.sh"
-#wget -q -O /usr/bin/del-xrays "https://raw.githubusercontent.com/yanzwrt/RPAVPN2/main/del-xrays.sh"
-#wget -q -O /usr/bin/user-xrays "https://raw.githubusercontent.com/yanzwrt/RPAVPN2/main/user-xrays.sh"
+#wget -q O /usr/bin/del-xrays "https://raw.githubusercontent.com/yanzwrt/RPAVPN2/main/del-xrays.sh"
+#wget -q O /usr/bin/user-xrays "https://raw.githubusercontent.com/yanzwrt/RPAVPN2/main/user-xrays.sh"
 chmod +x /usr/bin/add-ws
 chmod +x /usr/bin/add-ssws
 chmod +x /usr/bin/add-socks
