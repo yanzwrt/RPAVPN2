@@ -50,7 +50,7 @@ export Server1_URL="raw.githubusercontent.com/yanzwrt/RPAVPN2/main/limit"
 export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
-export Auther=".geovpn"
+export Auther="RakhaVPN"
 
 # // Root Checking
 if [ "${EUID}" -ne 0 ]; then
