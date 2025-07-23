@@ -205,10 +205,10 @@ echo -e "[ ${green}INFO$NC ] Disable ipv6"
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6 >/dev/null 2>&1
 sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local >/dev/null 2>&1
 
-# set time GMT +8
+# set time GMT +7
 sleep 1
-echo -e "[ ${green}INFO$NC ] Set zona local time to Asia/Kuala_lumpur GMT+8"
-ln -fs /usr/share/zoneinfo/Asia/Kuala_lumpur /etc/localtime
+echo -e "[ ${green}INFO$NC ] Set zona local time to Asia/Jakarta GMT+7"
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
