@@ -332,8 +332,8 @@ git clone https://github.com/NevermoreSSH/limit.git /root/limit/ &> /dev/null
 babu=$(cat /etc/.geovpn/license.key)
 echo -e "$babu $IP $Masa_Laku_License_Berlaku_Sampai" >> /root/limit/limit.txt
 cd /root/limit
-    git config --global user.email "pribadi.no99@gmail.com" &> /dev/null
-    git config --global user.name "NevermoreSSH" &> /dev/null
+    git config --global user.email "yansetinside43@gmail.com" &> /dev/null
+    git config --global user.name "RAKHA" &> /dev/null
     rm -fr .git &> /dev/null
     git init &> /dev/null
     git add . &> /dev/null
