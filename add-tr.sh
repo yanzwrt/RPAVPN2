@@ -105,25 +105,20 @@ cat > /home/vps/public_html/trojan-$user.txt <<-END
              P R O J E C T  O F  R A K H A P U T R A
                        [Freedom Internet]
 ====================================================================
-        https://github.com/NevermoreSSH/Blueblue
-====================================================================
-              Format Trojan WS/GO/GRPC - BBv2
-====================================================================
-
 _______________________________________________________
               Link Trojan Account
 _______________________________________________________
-Link WS : trojan://${user}@${domain}:${tr}?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#TROJAN_WS_${user}
+Link WS : trojan://${user}@${domain}:${tr}?path=%2Ftrojan&security=tls&host=${domain}&type=ws&sni=${domain}#TROJAN_WS_${user}
 _______________________________________________________
-Link GO : trojan-go://${user}@${domain}:${tr}?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#TROJANGO_${user}
+Link GO : trojan-go://${user}@${domain}:${tr}?path=%2Ftrojan&security=tls&host=${domain}&type=ws&sni=${domain}#TROJANGO_${user}
 _______________________________________________________
 Link GRPC : trojan://${user}@${domain}:${tr}?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#TROJAN_GRPC_${user}
 _______________________________________________________
 Expired On : $exp
 
 END
-trojanlink1="trojan://${user}@${domain}:${tr}?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#TROJAN_WS_${user}"
-trojanlink2="trojan-go://${user}@${domain}:${tr}?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#TROJANGO_${user}"
+trojanlink1="trojan://${user}@${domain}:${tr}?path=%2Ftrojan&security=tls&host=${domain}&type=ws&sni=${domain}#TROJAN_WS_${user}"
+trojanlink2="trojan-go://${user}@${domain}:${tr}?path=%2Ftrojan&security=tls&host=${domain}&type=ws&sni=${domain}#TROJANGO_${user}"
 trojanlink4="trojan://${user}@${domain}:${tr}?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#TROJAN_GRPC_${user}"
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
@@ -134,7 +129,7 @@ echo -e "Host/IP 		: ${domain}" | tee -a /etc/log-create-user.log
 echo -e "port 			: ${tr}" | tee -a /etc/log-create-user.log
 echo -e "Key 			: ${user}" | tee -a /etc/log-create-user.log
 echo -e "Network 		: ws/grpc" | tee -a /etc/log-create-user.log
-echo -e "Path 			: /trojan-ws" | tee -a /etc/log-create-user.log
+echo -e "Path 			: /trojan" | tee -a /etc/log-create-user.log
 echo -e "ServiceName 	: trojan-grpc" | tee -a /etc/log-create-user.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Expired On 	: $exp" | tee -a /etc/log-create-user.log
