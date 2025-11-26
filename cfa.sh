@@ -17,10 +17,10 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 #MYIP=$(wget -qO- https://ipv6.icanhazip.com);
 clear
 apt install jq curl -y
-DOMAIN=nevermoressh.me
+DOMAIN=rakhaputra.my.id
 # sub=$(</dev/urandom tr -dc a-z | head -c4)
 sub=$(premium)
-SUB_DOMAIN=${sub}.nevermoressh.me
+SUB_DOMAIN=${sub}.rakhaputra.my.id
 CF_ID=elliez667@gmail.com
 CF_KEY=565df838cbdf80722e12eb5b1d7186143b74e
 set -euo pipefail
