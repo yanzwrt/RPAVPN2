@@ -216,7 +216,7 @@ red_dot="\033[1;91m●\033[0m"
 [[ "$sshstunel" == *"ON"* ]] && stunnel_status="$green_dot" || stunnel_status="$red_dot"
 
 echo -e "${BICyan}╔══════════════════════════════════════════════════════════════╗${NC}"
-echo -e "${BICyan}║                ${BIWhite}${UWhite}✦ RAKHA VPN MANAGEMENT PANEL ✦${NC}               ${BICyan}║"
+echo -e "${BICyan}║ ${BIWhite}${UWhite}✦ RAKHA VPN ✦${NC}              ${BICyan}║"
 echo -e "${BICyan}╠══════════════════════════════════════════════════════════════╣${NC}"
 echo -e "${BICyan}║ ${BICyan}OS         :${BIWhite} $(hostnamectl | grep 'Operating System' | cut -d ' ' -f5-)${NC}"
 echo -e "${BICyan}║ ${BICyan}Kernel     :${BIWhite} $(uname -r)${NC}"
@@ -277,9 +277,9 @@ case $opt in
 23) clear ; dns ;;
 24) clear ; netf ;;
 25) clear ; tendang ;;
-55) clear ; wget -q -O /usr/bin/xraychanger "https://raw.githubusercontent.com/NevermoreSSH/Xcore-custompath/main/xraychanger.sh" && chmod +x /usr/bin/xraychanger && xraychanger ;;
+55) clear ; wget -q -O /usr/bin/xraychanger "https://raw.githubusercontent.com/yanzwrt/Xcore-custompath/main/xraychanger.sh" && chmod +x /usr/bin/xraychanger && xraychanger ;;
 66) clear ; bbr ;;
-77) clear ; wget -q -O /usr/bin/swapram "https://raw.githubusercontent.com/NevermoreSSH/swapram/main/swapram.sh" && chmod +x /usr/bin/swapram && swapram ;;
+77) clear ; wget -q -O /usr/bin/swapram "https://raw.githubusercontent.com/yanzwrt/swapram/main/swapram.sh" && chmod +x /usr/bin/swapram && swapram ;;
 88) clear ; backup ;;
 99) clear ; restore ;;
 #88) clear ; wget https://raw.githubusercontent.com/NevermoreSSH/Vergil/main2/addons/dns2.sh && chmod +x dns2.sh && ./dns2.sh ;;
