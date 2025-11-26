@@ -2,8 +2,8 @@
 # =========================================
 # Quick Setup | Script Setup Manager
 # Edition : Stable Edition V1.0
-# Auther  : NevermoreSSH
-# (C) Copyright 2022
+# Auther  : rakha
+# (C) Copyright 2025
 # =========================================
 # // Export Color & Information
 export RED='\033[0;31m'
@@ -34,7 +34,7 @@ export Server1_URL="raw.githubusercontent.com/yanzwrt/RPAVPN2/main/limit"
 export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
-export Auther=".geovpn"
+export Auther=".rakha"
 
 # // Root Checking
 if [ "${EUID}" -ne 0 ]; then
@@ -478,7 +478,7 @@ cat <<EOF> /etc/xray/config.json
        "streamSettings":{
            "network": "ws",
            "wsSettings": {
-               "path": "/trojan-ws"
+               "path": "/trojan"
             }
          }
      },
